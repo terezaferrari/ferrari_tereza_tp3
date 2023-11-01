@@ -42,3 +42,80 @@
             </div>
         </nav>
     </header>
+    <main>
+
+        <!-- section 1 - form -->
+
+        <section class="form">
+            <div class="row m-5">
+                <div class="form-holder">
+                    <div class="form-content">
+                        <div class="form-items">
+                            <h2>Demandez une Soumission</h2>
+                            <form>
+
+                                <div class="col-xl-8 col-md-8 col-sm-10 mt-3">
+                                    <label for="name">Nom</label>
+                                    <input type="text" class="form-control" id="name">
+                                </div>
+
+                                <div class="col-xl- col-md-8 col-sm-10 mt-3">
+                                    <label for="email">Courriel</label>
+                                    <input type="email" class="form-control" id="email">
+                                </div>
+
+                                <div class="col-xl-8 col-md-8 col-sm-10 mt-3">
+                                    <label for="language actuelle"> Langue actuelle du document</label>
+                                    <select class="select mt-3 form-control" id="language actuelle">
+                                        <option>Français</option>
+                                        <option>Anglais</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-xl-8 col-md-8 col-sm-10 mt-3">
+                                    <label for="language choisit">Langue pour l'aquelle le document sera traduit</label>
+                                    <select class="select mt-3 form-control" id="language choisit">
+                                        <option>Anglais</option>
+                                        <option>Français</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-xl-8 col-md-8 col-sm-10 mt-3 ml-2">
+                                    <label for="image" class="mb-2">Placez vos images pour
+                                        soumission:</label>
+                                    <div action="upload.php" method="POST">
+                                        <div class="row form-group row-cols-2 m-1 ">
+                                            <input type="file" class="col mb-1 form-control-file color-dark" id="image"
+                                                name="image" aria-label="place image">
+                                            <input type="file" class="col mb-1 form-control-file color-dark" id="image"
+                                                name="image" aria-label="place image">
+                                            <input type="file" class="col mb-1 form-control-file color-dark" id="image"
+                                                name="image" aria-label="place image">
+                                            <input type="file" class="col mb-1 form-control-file color-dark" id="image"
+                                                name="image" aria-label="place image">
+                                            <input type="file" class="col mb-1 form-control-file color-dark" id="image"
+                                                name="image" aria-label="place image">
+                                        </div>
+                                        <div>
+                                            <button type="button" class="btn btn-primary mt-3 m-1 ">Upload</button>
+                                        </div>
+
+                                        <div class="d-flex justify-content-end">
+                                            <button id="sendButton" onclick="onSendButtonClick()" type="button"
+                                                class="btn btn-primary mt-3">Envoyer</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div id="sentModal" class="modal mt-5">
+            <div class="modal-content mt-5">
+                <span class="close">&times;</span>
+                <p>Soumission envoyée!</p>
+            </div>
+        </div>
