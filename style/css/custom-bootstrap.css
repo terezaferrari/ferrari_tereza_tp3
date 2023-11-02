@@ -1,3 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,300&family=Roboto&display=swap");
+body {
+  background-color: #696969;
+}
 
+footer {
+  background-color: #1B1B1B;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "Literata", serif !important;
+  color: #FFFEFE !important;
+}
+h1--secondary, h2--secondary, h3--secondary, h4--secondary, h5--secondary {
+  color: #1B1B1B !important;
+}
+
+.p, label {
+  font-family: "Roboto", sans-serif !important;
+  color: #FFFEFE !important;
+}
+.p--secondary, label--secondary {
+  color: #1B1B1B !important;
+}
+
+.btn-info {
+  background-color: #D0AF9A;
+  color: #1B1B1B;
+  border: 2px #D0AF9A;
+}
+.btn-info:hover {
+  background-color: darken #D0AF9A, 40%;
+}
+
+.info {
+  color: #D0AF9A !important;
+}
+
+.primary {
+  color: #FFFEFE !important;
+}
+
+.secondary {
+  color: #1B1B1B !important;
+}
+
+.btn-secondary {
+  background-color: #1B1B1B;
+  color: #FFFEFE;
+  border: 2px #1B1B1B;
+}
+.btn-secondary:hover {
+  background-color: #696969;
+}
+
+.btn-primary {
+  background-color: #FFFEFE;
+  color: #1B1B1B;
+  border: 2px #FFFEFE;
+}
+.btn-primary:hover {
+  background-color: #ADADAD;
+}
+
+.services {
+  background-color: #FFFEFE;
+  height: 450px;
+}
+
+.item__contact {
+  color: #D0AF9A;
+  text-decoration: none;
+}
+.item__contact:hover {
+  border-bottom: 1px solid #D0AF9A;
+}
+
+svg {
+  color: #D0AF9A;
+}
+
+.phrase {
+  height: 450px;
+}
+
+.img-oval {
+  border-radius: 100px;
+}
+
+------------ .form p {
+  color: #FFFEFE;
+}
+
+#video {
+  width: 100%;
+  height: 500px;
+  background: url("img/madame-video.mp4") top center;
+  background-size: cover;
+  position: relative;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  width: 20%;
+}
+
+.close {
+  color: #1B1B1B;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+}
+
+.close:hover {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
 
 /*# sourceMappingURL=custom-bootstrap.css.map */
